@@ -8,8 +8,8 @@ const controlPorZona= require('../controllers/climaPorZona');
 
 router.get('/location', controlPorIp.buscandoClima);
 
-router.get('/current', controlPorHora.climaPorHora)
+router.get('/current/:city?', controlPorHora.climaPorHora)
 
-router.get('/forecast', controlPorZona.climaPorZona)
+router.get('/forecast/:city?', controlPorZona.climaPorZona)
 
 module.exports = router;

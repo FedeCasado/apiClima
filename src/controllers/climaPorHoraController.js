@@ -1,6 +1,6 @@
 const axios = require('axios');
-require('dotenv').config();
 
+require('dotenv').config();
 const url = process.env.UrlLOCAL
 exports.climaPorHora = async (req,res,next) => {
     
